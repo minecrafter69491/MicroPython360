@@ -1,0 +1,8 @@
+// Generated from MP_REGISTER_ROOT_POINTER() calls
+mp_obj_list_t mp_sys_argv_obj;
+mp_obj_base_t *cur_exception;
+mp_obj_t sys_exitfunc;
+mp_obj_t sys_mutable[MP_SYS_MUTABLE_NUM];
+mp_obj_t persistent_code_root_pointers;
+mp_sched_item_t sched_queue[MICROPY_SCHEDULER_DEPTH];
+vstr_t *repl_line;

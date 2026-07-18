@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CodeAnalysis|Xbox 360">
+      <Configuration>CodeAnalysis</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Xbox 360">
+      <Configuration>Profile</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_FastCap|Xbox 360">
+      <Configuration>Profile_FastCap</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_LTCG|Xbox 360">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0CD3927F-6A0C-41FC-8AC9-E74B8CF508F1}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;PROFILE;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsC</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;PROFILE;FASTCAP;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG;_LIB;MICROPY_NLR_SETJMP=1;MICROPY_GCREGS_SETJMP=1;__STDC_FORMAT_MACROS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;py;ports\xbox360;shared\runtime;shared\readline</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="py\asmbase.h" />
+    <ClInclude Include="py\bc.h" />
+    <ClInclude Include="py\bc0.h" />
+    <ClInclude Include="py\binary.h" />
+    <ClInclude Include="py\builtin.h" />
+    <ClInclude Include="py\compile.h" />
+    <ClInclude Include="py\cstack.h" />
+    <ClInclude Include="py\dynruntime.h" />
+    <ClInclude Include="py\emit.h" />
+    <ClInclude Include="py\emitglue.h" />
+    <ClInclude Include="py\formatfloat.h" />
+    <ClInclude Include="py\frozenmod.h" />
+    <ClInclude Include="py\gc.h" />
+    <ClInclude Include="py\grammar.h" />
+    <ClInclude Include="py\lexer.h" />
+    <ClInclude Include="py\misc.h" />
+    <ClInclude Include="py\mpconfig.h" />
+    <ClInclude Include="py\mperrno.h" />
+    <ClInclude Include="py\mphal.h" />
+    <ClInclude Include="py\mpprint.h" />
+    <ClInclude Include="py\mpstate.h" />
+    <ClInclude Include="py\mpthread.h" />
+    <ClInclude Include="py\mpz.h" />
+    <ClInclude Include="py\nativeglue.h" />
+    <ClInclude Include="py\nlr.h" />
+    <ClInclude Include="py\obj.h" />
+    <ClInclude Include="py\objarray.h" />
+    <ClInclude Include="py\objexcept.h" />
+    <ClInclude Include="py\objfun.h" />
+    <ClInclude Include="py\objgenerator.h" />
+    <ClInclude Include="py\objint.h" />
+    <ClInclude Include="py\objlist.h" />
+    <ClInclude Include="py\objmodule.h" />
+    <ClInclude Include="py\objnamedtuple.h" />
+    <ClInclude Include="py\objstr.h" />
+    <ClInclude Include="py\objstringio.h" />
+    <ClInclude Include="py\objtuple.h" />
+    <ClInclude Include="py\objtype.h" />
+    <ClInclude Include="py\pairheap.h" />
+    <ClInclude Include="py\parse.h" />
+    <ClInclude Include="py\parsenum.h" />
+    <ClInclude Include="py\parsenumbase.h" />
+    <ClInclude Include="py\persistentcode.h" />
+    <ClInclude Include="py\profile.h" />
+    <ClInclude Include="py\pystack.h" />
+    <ClInclude Include="py\qstr.h" />
+    <ClInclude Include="py\qstrdefs.h" />
+    <ClInclude Include="py\reader.h" />
+    <ClInclude Include="py\repl.h" />
+    <ClInclude Include="py\ringbuf.h" />
+    <ClInclude Include="py\runtime.h" />
+    <ClInclude Include="py\runtime0.h" />
+    <ClInclude Include="py\scope.h" />
+    <ClInclude Include="py\smallint.h" />
+    <ClInclude Include="py\stackctrl.h" />
+    <ClInclude Include="py\stream.h" />
+    <ClInclude Include="py\unicode.h" />
+    <ClInclude Include="py\vmentrytable.h" />
+    <ClInclude Include="ports\xbox360\mphalport.h" />
+    <ClInclude Include="ports\xbox360\qstrdefsport.h" />
+    <ClInclude Include="ports\xbox360\mpconfigport.h" />
+    <ClInclude Include="ports\xbox360\pyos_module.h" />
+    <ClInclude Include="shared\runtime\pyexec.h" />
+    <ClInclude Include="shared\runtime\interrupt_char.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="py\argcheck.c" />
+    <ClCompile Include="py\asmbase.c" />
+    <ClCompile Include="py\bc.c" />
+    <ClCompile Include="py\binary.c" />
+    <ClCompile Include="py\builtinevex.c" />
+    <ClCompile Include="py\builtinhelp.c" />
+    <ClCompile Include="py\builtinimport.c" />
+    <ClCompile Include="py\compile.c" />
+    <ClCompile Include="py\cstack.c" />
+    <ClCompile Include="py\emitbc.c" />
+    <ClCompile Include="py\emitcommon.c" />
+    <ClCompile Include="py\emitglue.c" />
+    <ClCompile Include="py\emitnative.c" />
+    <ClCompile Include="py\formatfloat.c" />
+    <ClCompile Include="py\frozenmod.c" />
+    <ClCompile Include="py\gc.c" />
+    <ClCompile Include="py\lexer.c" />
+    <ClCompile Include="py\malloc.c" />
+    <ClCompile Include="py\map.c" />
+    <ClCompile Include="py\modarray.c" />
+    <ClCompile Include="py\modbuiltins.c" />
+    <ClCompile Include="py\modcmath.c" />
+    <ClCompile Include="py\modcollections.c" />
+    <ClCompile Include="py\moderrno.c" />
+    <ClCompile Include="py\modgc.c" />
+    <ClCompile Include="py\modio.c" />
+    <ClCompile Include="py\modmath.c" />
+    <ClCompile Include="py\modmicropython.c" />
+    <ClCompile Include="py\modstruct.c" />
+    <ClCompile Include="py\modsys.c" />
+    <ClCompile Include="py\modthread.c" />
+    <ClCompile Include="py\mpprint.c" />
+    <ClCompile Include="py\mpstate.c" />
+    <ClCompile Include="py\mpz.c" />
+    <ClCompile Include="py\nativeglue.c" />
+    <ClCompile Include="py\nlr.c" />
+    <ClCompile Include="py\nlrpowerpc.c" />
+    <ClCompile Include="py\nlrsetjmp.c" />
+    <ClCompile Include="py\obj.c" />
+    <ClCompile Include="py\objarray.c" />
+    <ClCompile Include="py\objattrtuple.c" />
+    <ClCompile Include="py\objbool.c" />
+    <ClCompile Include="py\objboundmeth.c" />
+    <ClCompile Include="py\objcell.c" />
+    <ClCompile Include="py\objclosure.c" />
+    <ClCompile Include="py\objcomplex.c" />
+    <ClCompile Include="py\objdeque.c" />
+    <ClCompile Include="py\objdict.c" />
+    <ClCompile Include="py\objenumerate.c" />
+    <ClCompile Include="py\objexcept.c" />
+    <ClCompile Include="py\objfilter.c" />
+    <ClCompile Include="py\objfloat.c" />
+    <ClCompile Include="py\objfun.c" />
+    <ClCompile Include="py\objgenerator.c" />
+    <ClCompile Include="py\objgetitemiter.c" />
+    <ClCompile Include="py\objint.c" />
+    <ClCompile Include="py\objint_longlong.c" />
+    <ClCompile Include="py\objint_mpz.c" />
+    <ClCompile Include="py\objlist.c" />
+    <ClCompile Include="py\objmap.c" />
+    <ClCompile Include="py\objmodule.c" />
+    <ClCompile Include="py\objnamedtuple.c" />
+    <ClCompile Include="py\objnone.c" />
+    <ClCompile Include="py\objobject.c" />
+    <ClCompile Include="py\objpolyiter.c" />
+    <ClCompile Include="py\objproperty.c" />
+    <ClCompile Include="py\objrange.c" />
+    <ClCompile Include="py\objreversed.c" />
+    <ClCompile Include="py\objringio.c" />
+    <ClCompile Include="py\objset.c" />
+    <ClCompile Include="py\objsingleton.c" />
+    <ClCompile Include="py\objslice.c" />
+    <ClCompile Include="py\objstr.c" />
+    <ClCompile Include="py\objstringio.c" />
+    <ClCompile Include="py\objstrunicode.c" />
+    <ClCompile Include="py\objtuple.c" />
+    <ClCompile Include="py\objtype.c" />
+    <ClCompile Include="py\objzip.c" />
+    <ClCompile Include="py\opmethods.c" />
+    <ClCompile Include="py\pairheap.c" />
+    <ClCompile Include="py\parse.c" />
+    <ClCompile Include="py\parsenum.c" />
+    <ClCompile Include="py\parsenumbase.c" />
+    <ClCompile Include="py\persistentcode.c" />
+    <ClCompile Include="py\profile.c" />
+    <ClCompile Include="py\pystack.c" />
+    <ClCompile Include="py\qstr.c" />
+    <ClCompile Include="py\reader.c" />
+    <ClCompile Include="py\repl.c" />
+    <ClCompile Include="py\ringbuf.c" />
+    <ClCompile Include="py\runtime.c" />
+    <ClCompile Include="py\runtime_utils.c" />
+    <ClCompile Include="py\scheduler.c" />
+    <ClCompile Include="py\scope.c" />
+    <ClCompile Include="py\sequence.c" />
+    <ClCompile Include="py\showbc.c" />
+    <ClCompile Include="py\smallint.c" />
+    <ClCompile Include="py\stackctrl.c" />
+    <ClCompile Include="py\stream.c" />
+    <ClCompile Include="py\unicode.c" />
+    <ClCompile Include="py\vm.c" />
+    <ClCompile Include="py\vstr.c" />
+    <ClCompile Include="py\warning.c" />
+    <ClCompile Include="ports\xbox360\xbox360_hal.c" />
+    <ClCompile Include="ports\xbox360\pyos_module.c" />
+    <ClCompile Include="shared\runtime\pyexec.c" />
+    <ClCompile Include="shared\runtime\gchelper_generic.c" />
+    <ClCompile Include="shared\runtime\stdout_helpers.c" />
+    <ClCompile Include="shared\runtime\interrupt_char.c" />
+    <ClCompile Include="shared\runtime\sys_stdio_mphal.c" />
+    <ClCompile Include="ports\xbox360\frozen_content.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,16 @@
+#pragma once
+#include <stddef.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+char* pyos_host_read_file(const char* path, size_t* out_len);
+int   pyos_host_mount_image(const char* path);
+int   pyos_host_image_read(int handle, const char* vpath, char* buf, int max_size);
+void  pyos_host_unmount_image(int handle);
+char* pyos_host_get_nvram(size_t* out_len);
+
+#ifdef __cplusplus
+}
+#endif

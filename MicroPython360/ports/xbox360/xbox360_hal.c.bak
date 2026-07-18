@@ -1,0 +1,176 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "mpconfig.h"
+#include "mphal.h"
+#include "mpstate.h"
+#include "misc.h"
+#include "gc.h"
+#include "runtime.h"
+#include "stackctrl.h"
+#include "lexer.h"
+#include "reader.h"
+#include "shared/runtime/pyexec.h"
+#include "mperrno.h"
+#include "builtin.h"
+#include "parse.h"
+#include "compile.h"
+#include "objmodule.h"
+#include "shared/runtime/gchelper.h"
+
+extern void xbox360_uart_putc(char c);
+extern char xbox360_uart_getc(void);
+extern unsigned long xbox360_get_tick_ms(void);
+
+mp_uint_t mp_hal_ticks_ms(void) {
+    return xbox360_get_tick_ms();
+}
+
+mp_uint_t mp_hal_ticks_us(void) {
+    return xbox360_get_tick_ms() * 1000;
+}
+
+void mp_hal_set_interrupt_char(char c) {
+}
+
+int mp_hal_stdin_rx_chr(void) {
+    return xbox360_uart_getc();
+}
+
+mp_uint_t mp_hal_stdout_tx_strn(const char *str, mp_uint_t len) {
+    for (mp_uint_t i = 0; i < len; i++) {
+        xbox360_uart_putc(str[i]);
+    }
+    return len;
+}
+
+void mp_hal_stdout_tx_str(const char *str) {
+    mp_hal_stdout_tx_strn(str, strlen(str));
+}
+
+void mp_hal_stdout_tx_strn_cooked(const char *str, mp_uint_t len) {
+    for (mp_uint_t i = 0; i < len; i++) {
+        if (str[i] == '\n') {
+            xbox360_uart_putc('\r');
+        }
+        xbox360_uart_putc(str[i]);
+    }
+}
+
+void gc_collect(void) {
+    gc_collect_start();
+    gc_helper_collect_regs_and_stack();
+    gc_collect_end();
+}
+
+mp_lexer_t *mp_lexer_new_from_file(qstr filename) {
+    const char *path = qstr_str(filename);
+    FILE *f = fopen(path, "rb");
+    if (!f) {
+        mp_raise_OSError(MP_ENOENT);
+    }
+    fseek(f, 0, SEEK_END);
+    long len = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char *data = (char*)malloc(len + 1);
+    if (!data) {
+        fclose(f);
+        mp_raise_OSError(MP_ENOMEM);
+    }
+    size_t n = fread(data, 1, len, f);
+    fclose(f);
+    data[n] = '\0';
+    mp_lexer_t *lex = mp_lexer_new_from_str_len(filename, data, n, 0);
+    free(data);
+    return lex;
+}
+
+mp_import_stat_t mp_import_stat(const char *path) {
+    size_t plen = strlen(path);
+    char *fpath = (char*)malloc(plen + 4);
+    memcpy(fpath, path, plen);
+    fpath[plen] = '.';
+    fpath[plen + 1] = 'p';
+    fpath[plen + 2] = 'y';
+    fpath[plen + 3] = '\0';
+
+    FILE *f = fopen(fpath, "rb");
+    free(fpath);
+    if (f) {
+        fclose(f);
+        return MP_IMPORT_STAT_FILE;
+    }
+
+    char *dpath = (char*)malloc(plen + 13);
+    memcpy(dpath, path, plen);
+    memcpy(dpath + plen, "/__init__.py", 13);
+    f = fopen(dpath, "rb");
+    free(dpath);
+    if (f) {
+        fclose(f);
+        return MP_IMPORT_STAT_DIR;
+    }
+
+    return MP_IMPORT_STAT_NO_EXIST;
+}
+
+
+
+mp_obj_t mp_builtin_open(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs) {
+    mp_raise_OSError(MP_ENOENT);
+}
+MP_DEFINE_CONST_FUN_OBJ_KW(mp_builtin_open_obj, 1, mp_builtin_open);
+
+void nlr_jump_fail(void *val) {
+    while (1);
+}
+
+void NORETURN __fatal_error(const char *msg) {
+    while (1);
+}
+
+void __stack_chk_fail(void) {
+    static bool failed_once;
+    if (failed_once) return;
+    failed_once = true;
+    __fatal_error("Stack corruption detected");
+}
+
+void __assert_fail(const char *assertion, const char *file,
+    unsigned int line, const char *function) {
+    printf("Assert at %s:%d:%s() \"%s\" failed\n", file, line, function, assertion);
+    for (;;);
+}
+
+extern const mp_obj_module_t mp_module_pyos;
+
+void mp_xbox360_init(void) {
+    __declspec(align(16)) static char heap[256 * 1024];
+
+    memset(&mp_state_ctx, 0, sizeof(mp_state_ctx));
+
+    gc_init(heap, heap + sizeof(heap));
+
+    mp_stack_ctrl_init();
+    mp_stack_set_limit(48 * 1024);
+
+    mp_init();
+
+    mp_obj_dict_store(MP_OBJ_FROM_PTR(&MP_STATE_VM(mp_loaded_modules_dict)), MP_OBJ_NEW_QSTR(MP_QSTR_pyos), MP_OBJ_FROM_PTR(&mp_module_pyos));
+}
+
+void mp_xbox360_execute(const char *script) {
+    nlr_buf_t nlr;
+    if (nlr_push(&nlr) == 0) {
+        mp_lexer_t *lex = mp_lexer_new_from_str_len(MP_QSTR__lt_stdin_gt_,
+            script, strlen(script), 0);
+        mp_parse_compile_execute(lex, MP_PARSE_SINGLE_INPUT, mp_globals_get(), mp_locals_get());
+        nlr_pop();
+    } else {
+        mp_obj_t exc = (mp_obj_t)nlr.ret_val;
+        if (mp_obj_is_subclass_fast(mp_obj_get_type(exc), &mp_type_SystemExit)) {
+            return;
+        }
+        mp_obj_print_exception(&mp_plat_print, exc);
+    }
+}

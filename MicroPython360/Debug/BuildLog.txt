@@ -1,0 +1,246 @@
+﻿Build started 7/16/2026 9:24:01 PM.
+     1>Project "\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\MicroPython360.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\MicroPython360.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Xbox 360 SDK\bin\win32\CL.exe /c /I. /Ipy /Iports\xbox360 /Ishared\runtime /Ishared\readline /Zi /nologo /W3 /WX- /Od /Os /D _DEBUG /D _XBOX /D _LIB /D MICROPY_NLR_SETJMP=1 /D MICROPY_GCREGS_SETJMP=1 /D __STDC_FORMAT_MACROS /GF /Gm- /MTd /GS- /Gy /fp:fast /fp:except- /Zc:wchar_t /Zc:forScope /GR- /openmp- /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TC py\argcheck.c py\asmbase.c py\bc.c py\binary.c py\builtinevex.c py\builtinhelp.c py\builtinimport.c py\compile.c py\cstack.c py\emitbc.c py\emitcommon.c py\emitglue.c py\emitnative.c py\formatfloat.c py\frozenmod.c py\gc.c py\lexer.c py\malloc.c py\map.c py\modarray.c py\modbuiltins.c py\modcmath.c py\modcollections.c py\moderrno.c py\modgc.c py\modio.c py\modmath.c py\modmicropython.c py\modstruct.c py\modsys.c py\modthread.c py\mpprint.c py\mpstate.c py\mpz.c py\nativeglue.c py\nlr.c py\nlrpowerpc.c py\nlrsetjmp.c py\obj.c py\objarray.c py\objattrtuple.c py\objbool.c py\objboundmeth.c py\objcell.c py\objclosure.c py\objcomplex.c py\objdeque.c py\objdict.c py\objenumerate.c py\objexcept.c py\objfilter.c py\objfloat.c py\objfun.c py\objgenerator.c py\objgetitemiter.c py\objint.c py\objint_longlong.c py\objint_mpz.c py\objlist.c py\objmap.c py\objmodule.c py\objnamedtuple.c py\objnone.c py\objobject.c py\objpolyiter.c py\objproperty.c py\objrange.c py\objreversed.c py\objringio.c py\objset.c py\objsingleton.c py\objslice.c py\objstr.c py\objstringio.c py\objstrunicode.c py\objtuple.c py\objtype.c py\objzip.c py\opmethods.c py\pairheap.c py\parse.c py\parsenum.c py\parsenumbase.c py\persistentcode.c py\profile.c py\pystack.c py\qstr.c py\reader.c py\repl.c py\ringbuf.c py\runtime.c py\runtime_utils.c py\scheduler.c py\scope.c py\sequence.c py\showbc.c py\smallint.c py\stackctrl.c py\stream.c py\unicode.c py\vm.c py\vstr.c py\warning.c ports\xbox360\xbox360_hal.c ports\xbox360\pyos_module.c shared\runtime\pyexec.c shared\runtime\gchelper_generic.c shared\runtime\stdout_helpers.c shared\runtime\interrupt_char.c shared\runtime\sys_stdio_mphal.c shared\libc\printf.c ports\xbox360\frozen_content.c /FI"C:\Program Files (x86)\Microsoft Xbox 360 SDK\\include\xbox\xbox_intellisense_platform.h"
+         argcheck.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         asmbase.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         bc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         binary.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         builtinevex.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         builtinhelp.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         builtinimport.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         compile.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         cstack.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         emitbc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         emitcommon.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         emitglue.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         emitnative.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         formatfloat.c
+     1>py\formatfloat.c(27): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         frozenmod.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         gc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpprint.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         lexer.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         malloc.c
+     1>py\malloc.c(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         map.c
+     1>py\map.c(32): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modarray.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+         Compiling...
+         modbuiltins.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\smallint.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modcmath.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modcollections.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         moderrno.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modgc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modio.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modmath.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modmicropython.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modstruct.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modsys.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         modthread.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         mpprint.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mphal.h(30): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         mpstate.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         mpz.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpz.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         nativeglue.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         nlr.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         nlrpowerpc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         nlrsetjmp.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         obj.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objarray.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+         Compiling...
+         objattrtuple.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objbool.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objboundmeth.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objcell.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objclosure.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objcomplex.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\parsenum.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objdeque.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objdict.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objenumerate.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objexcept.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objfilter.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objfloat.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\parsenum.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objfun.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objgenerator.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objgetitemiter.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objint.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\parsenum.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objint_longlong.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\smallint.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objint_mpz.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\parsenumbase.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objlist.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objmap.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+         Compiling...
+         objmodule.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objnamedtuple.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objnone.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objobject.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objpolyiter.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objproperty.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objrange.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objreversed.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objringio.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\ringbuf.h(33): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objset.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objsingleton.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objslice.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objstr.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\unicode.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objstringio.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objstrunicode.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objtuple.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objtype.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         objzip.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         opmethods.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         pairheap.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+         Compiling...
+         parse.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         parsenum.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         parsenumbase.c
+     1>py\parsenumbase.c(27): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         persistentcode.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         profile.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         pystack.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         qstr.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         reader.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         repl.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         ringbuf.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\ringbuf.h(33): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         runtime.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\parsenum.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         runtime_utils.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         scheduler.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mphal.h(30): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         scope.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         sequence.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         showbc.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         smallint.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\smallint.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         stackctrl.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         stream.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         unicode.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\unicode.h(29): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+         Compiling...
+         vm.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         vstr.c
+     1>py\vstr.c(33): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         warning.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         xbox360_hal.c
+     1>ports\xbox360\xbox360_hal.c(4): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         pyos_module.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         pyexec.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\lexer.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         gchelper_generic.c
+     1>\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\py\mpstate.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         stdout_helpers.c
+     1>\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\py\mphal.h(30): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         interrupt_char.c
+     1>\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         sys_stdio_mphal.c
+     1>\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         printf.c
+     1>shared\libc\printf.c(27): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         frozen_content.c
+     1>\\desktop-8svoap5\users\public\project\project\realpyos\micropython360\micropython360\py\obj.h(31): fatal error C1083: Cannot open include file: 'mpconfig.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "\\DESKTOP-8SVOAP5\Users\Public\project\project\RealPyOS\MicroPython360\MicroPython360\MicroPython360.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.66

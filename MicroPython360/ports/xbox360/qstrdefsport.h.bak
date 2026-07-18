@@ -1,0 +1,10 @@
+// qstr definitions for Xbox 360 port
+Q(pyos)
+Q(read_file)
+Q(mount_image)
+Q(unmount_image)
+Q(image_read)
+Q(get_nvram)
+Q(FileNotFoundError)
+Q(shlex)
+Q(mount)
